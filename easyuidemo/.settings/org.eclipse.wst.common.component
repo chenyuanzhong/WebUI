@@ -3,6 +3,7 @@
     <wb-module deploy-name="easyuidemo">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/java/test/main"/>
         <property name="context-root" value="easyuidemo"/>
         <property name="java-output-path" value="/easyuidemo/build/classes"/>
     </wb-module>
