@@ -10,15 +10,38 @@
 	<link type="text/css" rel="stylesheet" charset="utf-8" href="../../jquery-easyui-1.3/themes/icon.css"></link>
 	<script type="text/javascript" charset="utf-8" src="../../jquery-easyui-1.3/locale/easyui-lang-zh_CN.js"></script>
 	
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Insert title here</title>
+	<script type="text/javascript" charset="utf-8">
+	   $(function(){
+		   $('#p2').panel({
+				width : 500,
+				height : 150,
+				title : '我的控制面板2',
+				tools : [ {
+					iconCls : 'icon-add',
+					handler : function() {
+						alert('new')
+					}
+				}, {
+					iconCls : 'icon-save',
+					handler : function() {
+						alert('save')
+					}
+				} ]
+			});
+	   });
+	</script>
 </head>
 <body>
-    <div id="p" class="easyui-panel" title="My Panel" style="width:500px;height:150px;padding:10px;background:#fafafa;"  
+    <div id="p" class="easyui-panel" title="我的控制面板1" style="width:500px;height:150px;padding:10px;background:#fafafa;"  
         iconCls="icon-save"  closable="true"  
         collapsible="true" minimizable="true" maximizable=true>  
-    <p>panel content.</p>  
-    <p>panel content.</p>  
-</div> 
+	    <p>panel content.</p>  
+	    <p>panel content.</p>
+	</div>
+	<div style="margin-top: 5px;"></div>
+	<div id="p2" style="padding:10px;" >    
+	    <p>panel content.</p>    
+	    <p>panel content.</p>
+    </div> 
 </body>
 </html>
